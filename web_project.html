@@ -12,6 +12,7 @@
       background-color: #fdfaf6;
     }
 
+    /* Header and Footer styling */
     header, footer {
       background-color: #d9c8a9;
       color: #3e2a1f;
@@ -19,6 +20,7 @@
       text-align: center;
     }
 
+    /* Navigation styling using inline-block for layout */
     nav {
       background-color: #c4b28c;
       padding: 0.5em;
@@ -44,10 +46,15 @@
 
     .main-content {
       padding: 2em;
+      max-width: 800px; /* Limits width for better readability on desktops */
+      margin: auto;
     }
 
+    /* Class used for grouping book information */
     .book-section {
       margin-bottom: 2em;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1em;
     }
 
     .book-section img {
@@ -78,7 +85,6 @@
 
   <main class="main-content">
 
-    <!-- Book 1 -->
     <section class="book-section">
       <h2>The Hobbit</h2>
       <p>by J.R.R. Tolkien</p>
@@ -86,7 +92,6 @@
       <img src="https://m.media-amazon.com/images/I/91b0C2YNSrL._AC_UF1000,1000_QL80_.jpg" alt="The Hobbit book cover">
     </section>
 
-    <!-- Book 2 -->
     <section class="book-section">
       <h2>Dune</h2>
       <p>by Frank Herbert</p>
@@ -97,7 +102,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 The Book Corner. All rights reserved.</p>
+    <p>&copy; 2026 The Book Corner. All rights reserved.</p>
   </footer>
 
 </body>

@@ -1,0 +1,29 @@
+# 1. Identity Configuration
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# 2. Local Repository Initialization
+mkdir book-list-manager
+cd book-list-manager
+git init 
+
+# 3. Adding Project Files
+# I added the index.html and task5_bookstore.json files here
+git add index.html task5_bookstore.json
+git commit -m "Initial commit: Add bookstore HTML and JSON data"
+
+# 4. Connecting to GitHub
+# Replace the URL with your own GitHub repo link
+git remote add origin https://github.com/<username>/book-list-manager.git
+git branch -M main
+git push -u origin main
+
+# 5. Tracking Changes (Example: Updating security notes)
+git add .
+git commit -m "Update: Added Task 6 security assessment"
+git push
+
+# 6. Inspecting Internal Git Objects
+# Viewing the commit history and internal tree structure
+git log --oneline
+git cat-file -p HEAD  # Displays the tree hash and author details
